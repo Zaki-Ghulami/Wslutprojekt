@@ -1,77 +1,199 @@
-header {
-    text-align: center;
-    padding: 1px;
-    background-color:rgb(75, 156, 223);
-}
-#meny {
-    overflow: hidden;
-    background-color:rgb(206, 111, 111);
-}
-
-
-#meny { 
-    list-style: none;
-    float: left;
-    padding: 0px;
-    margin:0;
-    display:block;
-    position: relative;
-    width:100%;
-    height:100%;
-    text-decoration: none;
-
-}
-#meny>li{
-    display: inline-block;
-}
-
 
 body {
-    background-color: rgb(246, 248, 248);
+    height:100%;
+    width:100%;
+    background-color:lightblue;
 }
-
+/*anges font-size till själva html*/
+html{
+    font-size: 2.50ex;
+   
+}
+header {
+text-align: center;
+padding: 0px;
+background-image:linear-gradient(red 1%,blue 20%);
+}
+/*css till globala menyn*/
+#meny {
+list-style: none;
+float: left;
+padding:0;
+margin:0;
+display:block;
+position: relative;
+width:100%;
+height:100%;
+text-decoration: none;
+overflow: hidden;
+background-image: linear-gradient(to left,rgba(200,250,100,250),rgba(255,0,0,1));
+}
+/*barnselektor till Globala menyn */
+#meny>li{
+display:inline-block;
+}
+body {
+background-color: rgb(246, 248, 248);    
+}
 ul {
-    list-style: none;
+list-style: none;
+padding:0;
 }
 li {
-    margin:20px;
+margin:20px;
+padding:0;
 }
+/*css till lokala menyn*/
 .sidenav {
-    list-style: none;
-    padding:0;
-    margin: 40px;
-    text-decoration: none;
-    position:relative;
-    text-align: left;
-    color: #8d8d2f;
-    display: inline-block;    
-    width: 150px;
-    height:200px;
-    background: #955297;
+list-style: none;
+padding:1rem;
+margin:2px;
+text-decoration: none;
+position:relative;
+color: #8d8d2f;
+width: 10%;
+height:100%;
+background: rgb(158, 69, 69);
+float:left;
 }
+/*css till li som ligger inom lokla menyn*/
 .sidenav>li {
-    display:block;
+display:block;
 }
 .a {
-    text-align: left ;
-    font-size: 20px;
+text-align: left ;
+font-size: 20px;
 }
+/*css till länkar som ligger i globla och lokla menyn*/
 a:link{
-    color: rgb(155, 35, 139);
-    text-decoration: none;
+color: rgb(155, 35, 139);
+text-decoration: none;
+background-color:transparent;
 }
+
+/*Css till länkar när man besöker länken */
 a:visited {
-    color:rgb(29, 173, 72);
-
+color:#f1f100;
+background-color: transparent;
 }
+/*css till när man håller musen på länkar*/
 a:hover {
-    color:rgb(83, 9, 19);
+color:hsl(120,100%,50%);
+background-color: transparent;
 }
+
+/*css till länkar som är aktiva*/
 a:active {
-    text-decoration: underline;
+text-decoration: underline;
+background-color: transparent;
+}
+main {
+width:47%;
+height:100%;
+background-color:#ffffff;
+float: left;
+padding:1px;
+margin:2px;
+}
+/*css till h3 som ligger inom main*/
+h3 {
+text-align: center;
+}
+aside {
+width:20%;
+height:100%;
+float: right;
+padding:10px;
+margin:5px;
+}
+img {
+  height:15em;
+  width:10rem;
+}
+table {
+font-family: arial, sans-serif;
+width: 100%;
+border-radius:5px;
+border-collapse: collapse;
+}
+/*css till td och th som ligger inom tabel på startsida,ARRYER och Operatorer*/
+td, th {
+border: 1px solid #8095af;
+padding: 8px;
+text-align: center;
+}
+footer {
+padding:10px;
+width:100%;
+height:15%;
+float:right;
+background-color:rgba(0, 183, 255, 0.5);
+text-align:center;
+}
+/*css till aside som ligger på Operatorer*/
+#second {
+width:50%;
+height:160px;
+float:left;
+padding:2px;
+}
+/* css till Elementet som ligger på Operatorer */
+caption {
+padding:5px;
+margin:3px;
+background-color:orange;
+transform: skewx(28deg);
+}
+thead {
+background-color:#3771bd;
+}
+/*css till td och th som ligger inom  aside på Operatorer*/
+#second> td,#second>th {
+border: 1px;
+text-align: left;
+padding:20px;
+}
+/*barn selektor till tabel*/
+tr:nth-child(even) {
+background-color:#257564;
+}
+/*barn selektor till tabel*/
+tr:nth-child(odd){
+    background-color:rgb(47, 38, 148);
+}
+/*css till videon som finns på FOR-LOOPER*/
+iframe {
+width:800px;
+height:480px;
+}
+/*css till taggen form son ligger inom login */
+form {
+ padding: 20px;
+ margin:5px;
+}
+@media only screen and (max-width:800px) {
+    /* For tablets and mobile */
+    header,.sidenav{ 
+        font-size:1rem;
+    }
+    main{
+        width: 100%;
+    }
+    .sidenav{
+        width: 100%;
+    }
+   
+}
+/*Text skrivs i ett block*/
+p {
+    text-align: justify;
 }
 
 
 
- 
-  
+
+
+
+
+
+
